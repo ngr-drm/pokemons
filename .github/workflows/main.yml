@@ -20,12 +20,6 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node_version }}
-
-    - name: npm install, build and test
-      run: |
-        npm install
-        npm run build --if-present
-        npm test
         
   deploy-development:
     runs-on: ${{ matrix.os }}
@@ -45,12 +39,6 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node_version }}
-
-    - name: npm install, build and test
-      run: |
-        npm install
-        npm run build --if-present
-        npm test 
         
   deploy-homologation:
     runs-on: ${{ matrix.os }}
@@ -71,8 +59,4 @@ jobs:
       with:
         node-version: ${{ matrix.node_version }}
 
-    - name: npm install, build and test
-      run: |
-        npm install
-        npm run build --if-present
-        npm test       
+      
