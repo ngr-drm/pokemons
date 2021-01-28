@@ -1,0 +1,26 @@
+version: "3"
+services:
+
+  postgres:
+    image: postgres
+
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: development
+
+    ports: 
+      - '5432:5432'  
+  api:
+    container_name: 'api'
+    depends_on:
+      - postgres
+
+    build: .
+    ports: 
+      - '9229:9229'
+      - '5000:5000'
+
+    volumes: 
+      - .:/usr/app
+    env_file: .env 
