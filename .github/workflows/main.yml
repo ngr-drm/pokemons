@@ -1,0 +1,60 @@
+ # Basic configuration example for a CI/CD pipeline
+
+name: Pokemons
+
+on:
+  workflow_dispatch:
+  
+jobs:
+  test:
+    name: Test on node ${{ matrix.node_version }} and ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node_version: ['10', '12', '14']
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node_version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node_version }}
+        
+  deploy-development:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node_version: ['10', '12', '14']
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+   
+    environment:
+      name: development
+      url: 'http://pokemom.org/dev'
+    needs: test
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node_version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node_version }}
+        
+  deploy-homologation:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node_version: ['10', '12', '14']
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+   
+    environment:
+      name: homologation
+      url: 'http://pokemom.org/hmg'
+    needs: deploy-development
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node_version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node_version }}
