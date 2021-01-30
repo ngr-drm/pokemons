@@ -3,6 +3,6 @@ const path = require('path');
 module.exports = {
     'config': path.resolve('src', 'infrastructure', 'orm', 'sequelize.ts'),
     'models-path': path.resolve('src', 'infrastructure', 'postgres', 'entities'),
-    'seeders-path': path.resolve('src', 'infrastructure', 'postgres', 'configuration', 'seeders'),
-    'migrations-path': path.resolve('src', 'infrastructure', 'postgres', 'configuration', 'migrations'),
+    'seeders-path': path.resolve('src', 'infrastructure', 'postgres', 'seeders'),
+    'migrations-path': path.resolve('src', 'infrastructure', 'postgres', 'migrations'),
 }
