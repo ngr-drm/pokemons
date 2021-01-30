@@ -4,13 +4,20 @@ import { Pokemons } from '../../infrastructure/postgres/entities/pokemons'
 
 export class PokemonsRepository implements IPokemonsRepository {
 
-  public async addPokemons(data:IPokemonsDTO) {
+  public async addPokemons(data: IPokemonsDTO) {
     try {
       // Enforce to the standard format
       data.tipo = data.tipo.toLowerCase();
       return await Pokemons.create({ ...data, nivel: 1 });
     }
-    catch (error){ throw error; }
+    catch (error) { throw error; }
   }
+  
+  public async updadePokemon(id: string, data: IPokemonsDTO) {
+    try {
+      return await Pokemons.update({ ...data }, { where: { id: id }  });
+  }
+  catch (error) { throw error; }
+}
   
 }

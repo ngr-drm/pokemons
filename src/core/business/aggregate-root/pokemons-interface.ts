@@ -4,5 +4,6 @@ import { IPokemonsDTO } from '../value-object/pokemons-dto'
 export interface IPokemonsRepository {
 
   addPokemons(data: IPokemonsDTO): Promise<Pokemons | false>
+  updadePokemon(id: string, data: IPokemonsDTO): Promise<[number, Pokemons[]]>
 
 }
