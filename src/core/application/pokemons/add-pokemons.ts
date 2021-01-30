@@ -1,4 +1,4 @@
-import { IPokemonsRepository } from '../business/aggregate-root/pokemons-interface'
+import { IPokemonsRepository } from '../../business/aggregate-root/pokemons-interface'
 import { Request, Response } from 'express'
 
 export class AddPokemons {

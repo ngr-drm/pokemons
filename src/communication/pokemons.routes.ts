@@ -1,9 +1,9 @@
 import { Router } from 'express'
-import { addPokemons } from '../core/application/main'
-import { updatePokemon } from '../core/application/main'
-import { deletePokemon } from '../core/application/main'
-import { getPokemon } from '../core/application/main'
-import { getAllPokemons } from '../core/application/main'
+import { addPokemons } from '../core/application/pokemons/main'
+import { updatePokemon } from '../core/application/pokemons/main'
+import { deletePokemon } from '../core/application/pokemons/main'
+import { getPokemon } from '../core/application/pokemons/main'
+import { getAllPokemons } from '../core/application/pokemons/main'
 
 
 const pokemonsRoutes = Router();

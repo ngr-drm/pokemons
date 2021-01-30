@@ -8,34 +8,36 @@ export class GameRepository implements IGameRepository {
 
   public async battle(pokemonAId: string, pokemonBId: string) {
 
+    const t = await sequelize.transaction();
     try {
-      const t = await sequelize.transaction();
+      
       const pokemonA = await Pokemons.findOne({
         attributes: ['nivel', 'tipo', 'treinador'],
         where: { id: pokemonAId }
       });
-
       const pokemonB = await Pokemons.findOne({
         attributes: ['nivel', 'tipo', 'treinador'],
         where: { id: pokemonBId }
       });
 
+      // Player configuration
       const playerA: IPlayGame = {
         id: pokemonAId,
         level: pokemonA?.getDataValue('nivel'),
         kind: pokemonA?.getDataValue('tipo'),
         coach: pokemonA?.getDataValue('treinador'),
       }
-
       const playerB: IPlayGame = {
         id: pokemonBId,
         level: pokemonB?.getDataValue('id'),
         kind: pokemonB?.getDataValue('tipo'),
         coach: pokemonB?.getDataValue('treinador'),
       }
-
+      
+      // Get the result of the game
       const result = mainGame(playerA, playerB);
-
+      
+      // Update levels
       await Pokemons.update({ nivel: result?.winner.level },
         {
           where: { id: result?.winner.id },
@@ -52,6 +54,7 @@ export class GameRepository implements IGameRepository {
           });
       }
 
+      // Return result payload 
       const payload: IGameWinner | IGameLoser = {
         vencedor: {
           id: result?.winner.id,
@@ -67,11 +70,11 @@ export class GameRepository implements IGameRepository {
         }
 
       }
+      await t.commit();
       return payload;
 
-
     }
-    catch (error) { throw error; }
+    catch (error) { await t.rollback(); throw error; }
   }
 
 

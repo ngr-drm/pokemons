@@ -1,8 +1,8 @@
 import { Router } from 'express'
-import { pokemonsRoutes } from './pokemons.routes'
+import { gameRoutes } from './game.routes'
 
 const routes = Router();
 
-routes.use(pokemonsRoutes);
+routes.use(gameRoutes);
 
 export { routes } 

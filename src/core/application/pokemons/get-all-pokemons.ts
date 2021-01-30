@@ -1,7 +1,7 @@
-import { IPokemonsRepository } from '../business/aggregate-root/pokemons-interface'
+import { IPokemonsRepository } from '../../business/aggregate-root/pokemons-interface'
 import { Request, Response } from 'express'
 
-export class DeletePokemon {
+export class GetAllPokemons {
 
   constructor(
     private readonly repository: IPokemonsRepository
@@ -9,11 +9,10 @@ export class DeletePokemon {
 
   execute = async (req: Request, res: Response): Promise<Response> => {
 
-    const { id } = req.params;
     try {
 
-      await this.repository.deletePokemon(id);
-      return res.status(204).send();
+      const pokemon = await this.repository.getAllPokemons();
+      return res.status(200).json(pokemon);
 
     } catch (error) {
       return res.status(401).json({ message: 'Erro: consulte administração...', details: error.message });
