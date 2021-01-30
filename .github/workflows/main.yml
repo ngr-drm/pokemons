@@ -1,6 +1,6 @@
-# Basic configuration example for a CI/CD pipeline
+ # Basic configuration example for a CI/CD pipeline
 
-name: Pokemon
+name: Pokemons
 
 on:
   workflow_dispatch:
@@ -58,5 +58,3 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node_version }}
-
-      
