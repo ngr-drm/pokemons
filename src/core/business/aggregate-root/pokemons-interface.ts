@@ -5,5 +5,7 @@ export interface IPokemonsRepository {
 
   addPokemons(data: IPokemonsDTO): Promise<Pokemons | false>
   updadePokemon(id: string, data: IPokemonsDTO): Promise<[number, Pokemons[]]>
+  deletePokemon(id: string): Promise<number>
+  getPokemon(id: string): Promise<Pokemons | null>
 
 }
