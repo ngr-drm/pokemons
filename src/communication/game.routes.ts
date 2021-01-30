@@ -5,5 +5,4 @@ const gameRoutes = Router();
 
 gameRoutes.post('/batalhar/:pokemonAId/:pokemonBId', gamePokemons.execute);
 
-
 export { gameRoutes };

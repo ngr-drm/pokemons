@@ -10,7 +10,7 @@ export class GameRepository implements IGameRepository {
 
     const t = await sequelize.transaction();
     try {
-      
+
       const pokemonA = await Pokemons.findOne({
         attributes: ['nivel', 'tipo', 'treinador'],
         where: { id: pokemonAId }
@@ -29,14 +29,14 @@ export class GameRepository implements IGameRepository {
       }
       const playerB: IPlayGame = {
         id: pokemonBId,
-        level: pokemonB?.getDataValue('id'),
+        level: pokemonB?.getDataValue('nivel'),
         kind: pokemonB?.getDataValue('tipo'),
         coach: pokemonB?.getDataValue('treinador'),
       }
-      
+
       // Get the result of the game
       const result = mainGame(playerA, playerB);
-      
+
       // Update levels
       await Pokemons.update({ nivel: result?.winner.level },
         {
