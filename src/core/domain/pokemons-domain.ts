@@ -34,5 +34,12 @@ export class PokemonsRepository implements IPokemonsRepository {
     catch (error) { throw error; }
   }
 
+  public async getAllPokemons() {
+    try {
+      return await Pokemons.findAll();
+    }
+    catch (error) { throw error; }
+  }
+
 
 }
