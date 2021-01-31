@@ -7,5 +7,4 @@ const routes = Router();
 routes.use(pokemonsRoutes);
 routes.use(gameRoutes);
 
-
 export { routes } 
