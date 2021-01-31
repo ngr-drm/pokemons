@@ -22,21 +22,26 @@ export class PokemonsRepository implements IPokemonsRepository {
 
   public async deletePokemon(id: string) {
     try {
-      return await Pokemons.destroy( { where: { id: id } });
+      return await Pokemons.destroy({ where: { id: id } });
     }
     catch (error) { throw error; }
   }
 
   public async getPokemon(id: string) {
     try {
-      return await Pokemons.findOne( { where: { id: id } });
+      return await Pokemons.findOne({
+        attributes: { exclude: ['createdAt', 'updatedAt'] },
+        where: { id: id }
+      });
     }
     catch (error) { throw error; }
   }
 
   public async getAllPokemons() {
     try {
-      return await Pokemons.findAll();
+      return await Pokemons.findAll({
+        attributes: { exclude: ['createdAt', 'updatedAt'] },
+      });
     }
     catch (error) { throw error; }
   }

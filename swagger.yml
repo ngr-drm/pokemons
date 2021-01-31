@@ -1,0 +1,83 @@
+openapi: "3.0.0"
+info:
+  title: Pokemons
+  description:  An API prototype for a game service.
+  version: 1.0.0
+servers:
+  - url: /
+    description: Homologation Server
+schemes:
+  - https
+
+paths:
+  /pokemons:
+    get:
+      tags: 
+        - Pokemons
+      summary: Returns a list of pokemons.
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+          content:
+              schema:
+                type: string
+                example:
+                  - id: "ed6aecbe-0659-4289-af39-497263d128e6"
+                    tipo: "charizard"
+                    treinador: "Jean Pita"
+                    nivel: "1"
+                  - id: "ed6aecbe-0659-4289-af39-497263d128e6"
+                    tipo: "Pikachu"
+                    treinador: "Seu Jorge"
+                    nivel: "1"
+            
+  pokemons/{id}:
+    get:
+      tags: 
+        - Pokemons
+      summary: Return a pokemons by id.
+      parameters:
+        - in: path
+          name: id
+          required: true
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+          content:
+              schema:
+                example: 
+                  id: "ed6aecbe-0659-4289-af39-497263d128e6"
+                  tipo: "charizard"
+                  treinador: "Jean Pita"
+                  nivel: "1"
+  /create-pokemons:
+    post:
+      tags: 
+        - Pokemons
+      summary: Creates a Pokemon.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/'
+              example: 
+                tipo: "charizard"
+                treinador: "Jean Pita"
+      
+      produces:
+        - application/json
+      responses:
+        201:
+          description: OK
+          content:
+              schema:
+                example: 
+                  id: "ed6aecbe-0659-4289-af39-497263d128e6"
+                  tipo: "charizard"
+                  treinador: "Jean Pita"
+                  nivel: "1"                                                    

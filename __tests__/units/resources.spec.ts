@@ -2,20 +2,6 @@ import { IPlayGame } from '../../src/core/business/value-object/pokemons-dto'
 import { jest } from '@jest/globals'
 
 describe('Validations', () => {
-  it('will check if the Pokemon type is valid', async () => {
-
-    const reference = 'Pikachu';
-    const kind = {
-      pikachu: 'pikachu',
-      charizard: 'charizard',
-      mewtwo: 'mewtwo',
-    }
-
-    // Enforce to the standard format
-    const result = reference.toLowerCase();
-    expect(kind.pikachu).toStrictEqual(result);
-
-  });
 
   it('will test the battle algorithm for pokemons of equal levels.', async () => {
 
@@ -128,6 +114,21 @@ describe('Validations', () => {
     const PokemonB: IPlayGame = { id: 'B', level: 1 }
     const myMockFn = jest.fn(algorithm);
     myMockFn(PokemonA, PokemonB);
+
+  });
+
+  it('will check if the Pokemon type is valid', async () => {
+
+    const reference = 'Pikachu';
+    const kind = {
+      pikachu: 'pikachu',
+      charizard: 'charizard',
+      mewtwo: 'mewtwo',
+    }
+
+    // Enforce to the standard format
+    const result = reference.toLowerCase();
+    expect(kind.pikachu).toStrictEqual(result);
 
   });
 
