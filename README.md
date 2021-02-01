@@ -153,7 +153,7 @@ With online application homologate the API accessing the automatic documentation
 	<div class="chart"><div class="cover-fill cover-full" style="width: 100%"></div><div class="cover-empty" style="width: 0%"></div></div>
 	</td>
 	<td data-value="100" class="pct high">100%</td>
-	<td data-value="7" class="abs high">7/7</td>>
+	<td data-value="7" class="abs high">7/7</td>
 	<td data-value="100" class="pct high">100%</td>
 	<td data-value="2" class="abs high">2/2</td>
 	<td data-value="100" class="pct high">100%</td>
