@@ -28,8 +28,8 @@ paths:
                     tipo: "charizard"
                     treinador: "Jean Pita"
                     nivel: "1"
-                  - id: "ed6aecbe-0659-4289-af39-497263d128e6"
-                    tipo: "Pikachu"
+                  - id: "3198791b-8de6-4f02-9495-281cd4fa748d6"
+                    tipo: "pikachu"
                     treinador: "Seu Jorge"
                     nivel: "1"
             
@@ -54,6 +54,7 @@ paths:
                   tipo: "charizard"
                   treinador: "Jean Pita"
                   nivel: "1"
+
   /create-pokemons:
     post:
       tags: 
@@ -80,4 +81,76 @@ paths:
                   id: "ed6aecbe-0659-4289-af39-497263d128e6"
                   tipo: "charizard"
                   treinador: "Jean Pita"
-                  nivel: "1"                                                    
+                  nivel: "1"
+
+  /update-pokemons/{id}:
+    put:
+      tags: 
+        - Pokemons
+      summary: Update a Pokemon
+      parameters:
+        - in: path
+          name: id
+          required: true
+
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/'
+              example: 
+                treinador: "Jean Pita" 
+      produces:
+        - application/json
+      responses:
+        204:
+          description: OK
+
+  /delete-pokemons/{id}:
+    delete:
+      tags: 
+        - Pokemons
+      summary: Delete a Pokemon
+      parameters:
+        - in: path
+          name: id
+          required: true
+      produces:
+        - application/json
+      responses:
+        204:
+          description: OK  
+  
+
+  /to-battle/{pokemonAId}/{pokemonBId}:
+    post:
+      tags: 
+        - Pokemons
+      summary: Play Pokemon
+      parameters:
+        - in: path
+          name: pokemonAId
+          required: true
+        - in: path
+          name: pokemonBId
+          required: true
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+          content:
+            schema:
+              type: string
+              example:
+                vencedor: 
+                  id: "ed6aecbe-0659-4289-af39-497263d128e6"
+                  tipo: "charizard"
+                  treinador: "Jean Pita"
+                  nivel: "1"
+                perdedor: 
+                  id: "3198791b-8de6-4f02-9495-281cd4fa748d6"
+                  tipo: "pikachu"
+                  treinador: "Seu Jorge"
+                  nivel: "0"  

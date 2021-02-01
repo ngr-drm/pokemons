@@ -1,6 +1,6 @@
 import { Router } from 'express'
-import { gameRoutes } from './game.routes'
-import { pokemonsRoutes } from './pokemons.routes'
+import { gameRoutes } from './game-routes'
+import { pokemonsRoutes } from './pokemons-routes'
 
 const routes = Router();
 

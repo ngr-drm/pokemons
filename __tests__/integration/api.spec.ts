@@ -5,7 +5,7 @@ describe('Pokemons', () => {
   it('will integrate with the pokemons registration service', async () => {
 
     const response = await request(app)
-      .post('/pokemons/')
+      .post('/create-pokemons/')
       .send({
         tipo: 'pikachu',
         treinador: 'Jean Pita',

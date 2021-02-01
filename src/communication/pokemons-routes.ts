@@ -9,8 +9,8 @@ const pokemonsRoutes = Router();
 
 pokemonsRoutes.get('/pokemons/:id', getPokemon.execute);
 pokemonsRoutes.post('/create-pokemons', addPokemons.execute);
-pokemonsRoutes.put('/pokemons/:id', updatePokemon.execute);
-pokemonsRoutes.delete('/pokemons/:id', deletePokemon.execute);
+pokemonsRoutes.put('/update-pokemons/:id', updatePokemon.execute);
+pokemonsRoutes.delete('/delete-pokemons/:id', deletePokemon.execute);
 pokemonsRoutes.get('/pokemons', getAllPokemons.execute);
 
 export { pokemonsRoutes };

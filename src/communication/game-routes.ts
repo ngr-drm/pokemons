@@ -3,6 +3,6 @@ import { gamePokemons } from '../core/application/game/main'
 
 const gameRoutes = Router();
 
-gameRoutes.post('/batalhar/:pokemonAId/:pokemonBId', gamePokemons.execute);
+gameRoutes.post('/to-battle/:pokemonAId/:pokemonBId', gamePokemons.execute);
 
 export { gameRoutes };
