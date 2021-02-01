@@ -68,7 +68,7 @@ With online application homologate the API accessing the automatic documentation
 </tr>
 </thead>
 <tbody><tr>
-	<td class="file high" data-value="src"><a href="src/index.html">src</a></td>
+	<td class="file high" data-value="src"><a href="src/">src</a></td>
 	<td data-value="100" class="pic high">
 	<div class="chart"><div class="cover-fill cover-full" style="width: 100%"></div><div class="cover-empty" style="width: 0%"></div></div>
 	</td>
@@ -83,7 +83,7 @@ With online application homologate the API accessing the automatic documentation
 	</tr>
 
 <tr>
-	<td class="file high" data-value="src/communication"><a href="src/communication/index.html">src/communication</a></td>
+	<td class="file high" data-value="src/communication"><a href="src/communication/">src/communication</a></td>
 	<td data-value="100" class="pic high">
 	<div class="chart"><div class="cover-fill cover-full" style="width: 100%"></div><div class="cover-empty" style="width: 0%"></div></div>
 	</td>
@@ -98,7 +98,7 @@ With online application homologate the API accessing the automatic documentation
 	</tr>
 
 <tr>
-	<td class="file medium" data-value="src/core/application/game"><a href="src/core/application/game/index.html">src/core/application/game</a></td>
+	<td class="file medium" data-value="src/core/application/game"><a href="src/core/application/game/">src/core/application/game</a></td>
 	<td data-value="57.14" class="pic medium">
 	<div class="chart"><div class="cover-fill" style="width: 57%"></div><div class="cover-empty" style="width: 43%"></div></div>
 	</td>
@@ -113,7 +113,7 @@ With online application homologate the API accessing the automatic documentation
 	</tr>
 
 <tr>
-	<td class="file medium" data-value="src/core/application/pokemons"><a href="src/core/application/pokemons/index.html">src/core/application/pokemons</a></td>
+	<td class="file medium" data-value="src/core/application/pokemons"><a href="src/core/application/pokemons/">src/core/application/pokemons</a></td>
 	<td data-value="59.38" class="pic medium">
 	<div class="chart"><div class="cover-fill" style="width: 59%"></div><div class="cover-empty" style="width: 41%"></div></div>
 	</td>
@@ -128,7 +128,7 @@ With online application homologate the API accessing the automatic documentation
 	</tr>
 
 <tr>
-	<td class="file low" data-value="src/core/business/value-object"><a href="src/core/business/value-object/index.html">src/core/business/value-object</a></td>
+	<td class="file low" data-value="src/core/business/value-object"><a href="src/core/business/value-object/">src/core/business/value-object</a></td>
 	<td data-value="3.85" class="pic low">
 	<div class="chart"><div class="cover-fill" style="width: 3%"></div><div class="cover-empty" style="width: 97%"></div></div>
 	</td>
@@ -143,7 +143,7 @@ With online application homologate the API accessing the automatic documentation
 	</tr>
 
 <tr>
-	<td class="file low" data-value="src/core/domain"><a href="src/core/domain/index.html">src/core/domain</a></td>
+	<td class="file low" data-value="src/core/domain"><a href="src/core/domain/">src/core/domain</a></td>
 	<td data-value="23.68" class="pic low">
 	<div class="chart"><div class="cover-fill" style="width: 23%"></div><div class="cover-empty" style="width: 77%"></div></div>
 	</td>
@@ -158,7 +158,7 @@ With online application homologate the API accessing the automatic documentation
 	</tr>
 
 <tr>
-	<td class="file high" data-value="src/infrastructure/orm"><a href="src/infrastructure/orm/index.html">src/infrastructure/orm</a></td>
+	<td class="file high" data-value="src/infrastructure/orm"><a href="src/infrastructure/orm/">src/infrastructure/orm</a></td>
 	<td data-value="100" class="pic high">
 	<div class="chart"><div class="cover-fill cover-full" style="width: 100%"></div><div class="cover-empty" style="width: 0%"></div></div>
 	</td>
@@ -173,7 +173,7 @@ With online application homologate the API accessing the automatic documentation
 	</tr>
 
 <tr>
-	<td class="file high" data-value="src/infrastructure/postgres/entities"><a href="src/infrastructure/postgres/entities/index.html">src/infrastructure/postgres/entities</a></td>
+	<td class="file high" data-value="src/infrastructure/postgres/entities"><a href="src/infrastructure/postgres/entities/">src/infrastructure/postgres/entities</a></td>
 	<td data-value="100" class="pic high">
 	<div class="chart"><div class="cover-fill cover-full" style="width: 100%"></div><div class="cover-empty" style="width: 0%"></div></div>
 	</td>
