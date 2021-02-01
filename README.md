@@ -46,5 +46,5 @@ Enter the database name and the user credentials according to the .env file.
   $ yarn test
 ```
 
-To approve the API access the automatic documentation: <a href="https://localhost:5000/pokemons-doc/v1/#/">Homologation API</a>
+With online application homologate the API accessing the automatic documentation: <a href="https://localhost:5000/pokemons-doc/v1/#/">Homologation API</a>
 
