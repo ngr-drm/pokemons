@@ -45,7 +45,7 @@ Enter the database name and the user credentials according to the .env file.
   $ yarn migrations
   $ yarn test
 ```
-#
+
 With online application homologate the API accessing the automatic documentation: <a href="https://localhost:5000/pokemons-doc/v1/#/">Homologation API</a>
 
 
@@ -56,7 +56,6 @@ With online application homologate the API accessing the automatic documentation
 <thead>
 <tr>
    <th data-col="file" data-fmt="html" data-html="true" class="file">File</th>
-   <th data-col="pic" data-type="number" data-fmt="html" data-html="true" class="pic"></th>
    <th data-col="statements" data-type="number" data-fmt="pct" class="pct">Statements</th>
    <th data-col="statements_raw" data-type="number" data-fmt="html" class="abs"></th>
    <th data-col="branches" data-type="number" data-fmt="pct" class="pct">Branches</th>
@@ -69,7 +68,6 @@ With online application homologate the API accessing the automatic documentation
 </thead>
 <tbody><tr>
 	<td class="file high" data-value="src"><a href="src/">src</a></td>
-	<td data-value="100" class="pic high">
 	<div class="chart"><div class="cover-fill cover-full" style="width: 100%"></div><div class="cover-empty" style="width: 0%"></div></div>
 	</td>
 	<td data-value="100" class="pct high">100%</td>
@@ -84,7 +82,6 @@ With online application homologate the API accessing the automatic documentation
 
 <tr>
 	<td class="file high" data-value="src/communication"><a href="src/communication/">src/communication</a></td>
-	<td data-value="100" class="pic high">
 	<div class="chart"><div class="cover-fill cover-full" style="width: 100%"></div><div class="cover-empty" style="width: 0%"></div></div>
 	</td>
 	<td data-value="100" class="pct high">100%</td>
@@ -99,7 +96,6 @@ With online application homologate the API accessing the automatic documentation
 
 <tr>
 	<td class="file medium" data-value="src/core/application/game"><a href="src/core/application/game/">src/core/application/game</a></td>
-	<td data-value="57.14" class="pic medium">
 	<div class="chart"><div class="cover-fill" style="width: 57%"></div><div class="cover-empty" style="width: 43%"></div></div>
 	</td>
 	<td data-value="57.14" class="pct medium">57.14%</td>
@@ -114,7 +110,6 @@ With online application homologate the API accessing the automatic documentation
 
 <tr>
 	<td class="file medium" data-value="src/core/application/pokemons"><a href="src/core/application/pokemons/">src/core/application/pokemons</a></td>
-	<td data-value="59.38" class="pic medium">
 	<div class="chart"><div class="cover-fill" style="width: 59%"></div><div class="cover-empty" style="width: 41%"></div></div>
 	</td>
 	<td data-value="59.38" class="pct medium">59.38%</td>
@@ -129,7 +124,6 @@ With online application homologate the API accessing the automatic documentation
 
 <tr>
 	<td class="file low" data-value="src/core/business/value-object"><a href="src/core/business/value-object/">src/core/business/value-object</a></td>
-	<td data-value="3.85" class="pic low">
 	<div class="chart"><div class="cover-fill" style="width: 3%"></div><div class="cover-empty" style="width: 97%"></div></div>
 	</td>
 	<td data-value="3.85" class="pct low">3.85%</td>
@@ -144,7 +138,6 @@ With online application homologate the API accessing the automatic documentation
 
 <tr>
 	<td class="file low" data-value="src/core/domain"><a href="src/core/domain/">src/core/domain</a></td>
-	<td data-value="23.68" class="pic low">
 	<div class="chart"><div class="cover-fill" style="width: 23%"></div><div class="cover-empty" style="width: 77%"></div></div>
 	</td>
 	<td data-value="23.68" class="pct low">23.68%</td>
@@ -159,7 +152,6 @@ With online application homologate the API accessing the automatic documentation
 
 <tr>
 	<td class="file high" data-value="src/infrastructure/orm"><a href="src/infrastructure/orm/">src/infrastructure/orm</a></td>
-	<td data-value="100" class="pic high">
 	<div class="chart"><div class="cover-fill cover-full" style="width: 100%"></div><div class="cover-empty" style="width: 0%"></div></div>
 	</td>
 	<td data-value="100" class="pct high">100%</td>
@@ -174,7 +166,6 @@ With online application homologate the API accessing the automatic documentation
 
 <tr>
 	<td class="file high" data-value="src/infrastructure/postgres/entities"><a href="src/infrastructure/postgres/entities/">src/infrastructure/postgres/entities</a></td>
-	<td data-value="100" class="pic high">
 	<div class="chart"><div class="cover-fill cover-full" style="width: 100%"></div><div class="cover-empty" style="width: 0%"></div></div>
 	</td>
 	<td data-value="100" class="pct high">100%</td>
