@@ -58,8 +58,6 @@ With online application homologate the API accessing the automatic documentation
    <th data-col="file" data-fmt="html" data-html="true" class="file">File</th>
    <th data-col="statements" data-type="number" data-fmt="pct" class="pct">Statements</th>
    <th data-col="statements_raw" data-type="number" data-fmt="html" class="abs"></th>
-   <th data-col="branches" data-type="number" data-fmt="pct" class="pct">Branches</th>
-   <th data-col="branches_raw" data-type="number" data-fmt="html" class="abs"></th>
    <th data-col="functions" data-type="number" data-fmt="pct" class="pct">Functions</th>
    <th data-col="functions_raw" data-type="number" data-fmt="html" class="abs"></th>
    <th data-col="lines" data-type="number" data-fmt="pct" class="pct">Lines</th>
@@ -75,8 +73,6 @@ With online application homologate the API accessing the automatic documentation
 	<td data-value="100" class="pct high">100%</td>
 	<td data-value="0" class="abs high">0/0</td>
 	<td data-value="100" class="pct high">100%</td>
-	<td data-value="0" class="abs high">0/0</td>
-	<td data-value="100" class="pct high">100%</td>
 	<td data-value="18" class="abs high">18/18</td>
 	</tr>
 
@@ -89,8 +85,6 @@ With online application homologate the API accessing the automatic documentation
 	<td data-value="100" class="pct high">100%</td>
 	<td data-value="0" class="abs high">0/0</td>
 	<td data-value="100" class="pct high">100%</td>
-	<td data-value="0" class="abs high">0/0</td>
-	<td data-value="100" class="pct high">100%</td>
 	<td data-value="25" class="abs high">25/25</td>
 	</tr>
 
@@ -100,8 +94,6 @@ With online application homologate the API accessing the automatic documentation
 	</td>
 	<td data-value="57.14" class="pct medium">57.14%</td>
 	<td data-value="14" class="abs medium">8/14</td>
-	<td data-value="100" class="pct high">100%</td>
-	<td data-value="0" class="abs high">0/0</td>
 	<td data-value="33.33" class="pct low">33.33%</td>
 	<td data-value="3" class="abs low">1/3</td>
 	<td data-value="61.54" class="pct medium">61.54%</td>
@@ -114,8 +106,6 @@ With online application homologate the API accessing the automatic documentation
 	</td>
 	<td data-value="59.38" class="pct medium">59.38%</td>
 	<td data-value="64" class="abs medium">38/64</td>
-	<td data-value="50" class="pct medium">50%</td>
-	<td data-value="6" class="abs medium">3/6</td>
 	<td data-value="46.67" class="pct low">46.67%</td>
 	<td data-value="15" class="abs low">7/15</td>
 	<td data-value="62.71" class="pct medium">62.71%</td>
@@ -129,8 +119,6 @@ With online application homologate the API accessing the automatic documentation
 	<td data-value="3.85" class="pct low">3.85%</td>
 	<td data-value="26" class="abs low">1/26</td>
 	<td data-value="0" class="pct low">0%</td>
-	<td data-value="28" class="abs low">0/28</td>
-	<td data-value="0" class="pct low">0%</td>
 	<td data-value="1" class="abs low">0/1</td>
 	<td data-value="3.85" class="pct low">3.85%</td>
 	<td data-value="26" class="abs low">1/26</td>
@@ -142,8 +130,6 @@ With online application homologate the API accessing the automatic documentation
 	</td>
 	<td data-value="23.68" class="pct low">23.68%</td>
 	<td data-value="38" class="abs low">9/38</td>
-	<td data-value="0" class="pct low">0%</td>
-	<td data-value="82" class="abs low">0/82</td>
 	<td data-value="16.67" class="pct low">16.67%</td>
 	<td data-value="6" class="abs low">1/6</td>
 	<td data-value="24.32" class="pct low">24.32%</td>
@@ -159,8 +145,6 @@ With online application homologate the API accessing the automatic documentation
 	<td data-value="100" class="pct high">100%</td>
 	<td data-value="0" class="abs high">0/0</td>
 	<td data-value="100" class="pct high">100%</td>
-	<td data-value="0" class="abs high">0/0</td>
-	<td data-value="100" class="pct high">100%</td>
 	<td data-value="6" class="abs high">6/6</td>
 	</tr>
 
@@ -169,9 +153,7 @@ With online application homologate the API accessing the automatic documentation
 	<div class="chart"><div class="cover-fill cover-full" style="width: 100%"></div><div class="cover-empty" style="width: 0%"></div></div>
 	</td>
 	<td data-value="100" class="pct high">100%</td>
-	<td data-value="7" class="abs high">7/7</td>
-	<td data-value="100" class="pct high">100%</td>
-	<td data-value="0" class="abs high">0/0</td>
+	<td data-value="7" class="abs high">7/7</td>>
 	<td data-value="100" class="pct high">100%</td>
 	<td data-value="2" class="abs high">2/2</td>
 	<td data-value="100" class="pct high">100%</td>
