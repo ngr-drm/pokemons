@@ -4,11 +4,14 @@
 **Overview**
 
 The solution for this API was inspired by the DDD (domain-oriented design) approach.</br>
-And its development process was conducted through the TDD (Test-driven development) technique. 
+And its development process was conducted through the TDD (Test-driven development) technique.</br>
+
+Design pattern applied: Mediator
 
 **Core technologies**
 
 Node.js TypeScript Express.js Sequelize Jest Docker PostgreSQL Swagger</br>
+
 
 **Technologies used to automate code standards and style guides**
 
