@@ -1,7 +1,7 @@
 openapi: "3.0.0"
 info:
   title: Pokemons
-  description:  An API prototype for a game service.
+  description:  An API prototype for a game service
   version: 1.0.0 BETA
 servers:
   - url: /
@@ -14,7 +14,7 @@ paths:
     get:
       tags: 
         - Pokemons
-      summary: Returns a list of pokemons.
+      summary: Returns a list of pokemons
       produces:
         - application/json
       responses:
@@ -33,11 +33,11 @@ paths:
                     treinador: "Seu Jorge"
                     nivel: "1"
             
-  pokemons/{id}:
+  /pokemons/{id}:
     get:
       tags: 
         - Pokemons
-      summary: Return a pokemons by id.
+      summary: Return a pokemons by id
       parameters:
         - in: path
           name: id
@@ -59,7 +59,7 @@ paths:
     post:
       tags: 
         - Pokemons
-      summary: Creates a Pokemon.
+      summary: Create a Pokemon
       requestBody:
         required: true
         content:
