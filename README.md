@@ -1,4 +1,4 @@
-<h3>Technical test: An API prototype for a game service.</h3>
+<h3>Technical challenge: An API prototype for a game service.</h3>
 
 #
 **Overview**
