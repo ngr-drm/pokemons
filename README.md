@@ -17,6 +17,8 @@ Node.js TypeScript Express.js Sequelize Jest Docker PostgreSQL Swagger</br>
 
 Husky Commitlint Commitizen Eslint
 
+</br>
+Note: In the Actions tab, you will find an experimental pipeline of  CI/CD.
 
 #
 **Instructions for running the project**
