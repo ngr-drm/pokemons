@@ -34,7 +34,7 @@ Dependencies: Docker and Docker Compose.</br>
 ```zsh
   Run application: docker-compose up or docker-compose up -d
 ```
-
+<br>
 
 Now with the SGDB of your choice, you should create a connection to the PostgreSQL database:</br> 
 Enter the database connection credentials according to the .env file.
