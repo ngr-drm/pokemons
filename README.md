@@ -27,12 +27,10 @@ Dependencies: Docker and Docker Compose.</br>
 
 
 #
-```zsh
-  Clone the repository: git clone https://github.com/Re44e/pokemons.git
-```
+Clone the repository and run the following command in the project root:
 
 ```zsh
-  Run application: docker-compose up or docker-compose up -d
+   docker-compose up or docker-compose up -d
 ```
 <br>
 
