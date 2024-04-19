@@ -38,15 +38,16 @@ Now with the SGDB of your choice, you should create a connection to the PostgreS
 Enter the database connection credentials according to the .env file.
 
 #
-```zsh
-  Enter the application container: docker exec -it api sh 
-```
+Enter the application container:
 
 ```zsh
-  Then run the following commands:
-  
-  $ yarn migrations
-  $ yarn test
+   docker exec -it api sh 
+```
+
+Then run the following commands:
+```zsh
+  yarn migrations
+  yarn test
 ```
 
 With online application homologate the API accessing the automatic documentation: <a href="https://localhost:5000/pokemons-doc/v1/#/">Homologation API</a>
